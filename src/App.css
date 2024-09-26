@@ -1,0 +1,56 @@
+.app {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.game-header-input,
+.game-header-item,
+.game-header-time {
+    display: flex;
+    align-items: center;
+}
+
+.game-header-input > label {
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.game-header-time > span {
+    margin: 10px 110px 10px 0;
+}
+
+.game-board {
+    border: 2px solid #000;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    min-height: 80vh;    
+    overflow: hidden;
+}
+
+.game-board > .circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.game-board > .circle.clicked {
+    background-color: red;
+}
+
+.game-over {
+    color: red;
+}
+
+.all-cleared {
+    color: green;
+}
